@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="text-sky-600 text-5xl font-semibold text-center mt-10">BLOG POST</h2>
+
+    <div class="overflow-x-auto w-4/5 mx-auto">
+        <table class="table table-zebra w-full mt-20">
+            <caption class="text-orange-600 text-2xl font-medium mb-5">Difference between Local Storage and Session Storage</caption>
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="text-center w-2/4">Local Storage</th>
+              <th class="text-center w-2/4">Session Storage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- row 1 -->
+            <tr>
+              <th>1</th>
+              <td class="whitespace-normal">Their main difference is that local storage data does not expire</td>
+              <td class="whitespace-normal">whereas session storage data gets cleared when the user closes its browser window.</td>
+            </tr>
+            <!-- row 2 -->
+            <tr>
+              <th>2</th>
+              <td class="whitespace-normal">Page sessions are valid for only one tab at a time. So, if a user has three tabs open, each one will have its own page session.</td>
+              <td class="whitespace-normal">Since local storage is not session-based, all the data must be deleted via javascript or manually.</td>
+            </tr>
+            <!-- row 3 -->
+            <tr>
+              <th>3</th>
+              <td>The storage capacity of local storage is 5MB/10MB</td>
+              <td>The storage capacity of session storage is 5MB</td>
+            </tr>
+            <!-- row 4 -->
+            <tr>
+                <th>4</th>
+                <td>The client  can only read local storage</td>
+                <td>The client can only read local storage</td>
+            </tr>
+            <!-- row 5 -->
+            <tr>
+                <th>5</th>
+                <td>There is no transfer of data to the server</td>
+                <td>There is no transfer of data to the server</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+
+    <div class="overflow-x-auto w-4/5 mx-auto">
+        <table class="table table-zebra w-full mt-20">
+            <caption class="text-cyan-600 text-2xl font-medium mb-5">Difference between JavaScript Global and Block Scope</caption>
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="text-center w-2/4">Global Scope</th>
+              <th class="text-center w-2/4">Block Scope</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- row 1 -->
+            <tr>
+              <th>1</th>
+              <td class="whitespace-normal">The variables defined outside of any function or curly brackets are known as global variables and have global scope.</td>
+              <td class="whitespace-normal">The block scope can be defined as the scope of the variables inside the curly brackets {}.</td>
+            </tr>
+            <!-- row 2 -->
+            <tr>
+              <th>2</th>
+              <td class="whitespace-normal">Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.</td>
+              <td class="whitespace-normal"> You are only allowed to refer to these variables from within the curly brackets {}.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+
+      <h2 class="text-stone-500 text-2xl font-medium mb-5 text-center mt-20">How does the Event Loop works in JavaScript?</h2>
+      <div class="border border-base-300 bg-base-100 rounded-box w-3/4 mx-auto p-10">
+        <p><span>__</span> Concepts, like passing callbacks to functions or writing asynchronous code, are often not so difficult to implement, which makes most JavaScript developers care less about what goes on under the hood. They just don’t care about understanding the complexities that have deeply abstracted from them by the language.</p><br>
+
+        <p>As a JavaScript developer, it becomes increasingly important to understand what really happens under the hood and how most of these complexities abstracted from us really work. It helps us make more informed decisions, which can, in turn, boost our code performance drastically.</p>
+            
+        <p>This article focuses on one of the very important but seldom understood concepts or terms in JavaScript. The EVENT LOOP!. </p>
+            
+        <p>Writing asynchronous code can not be avoided in JavaScript, but why does a code running asynchronously really mean? i.e. The Event Loop</p>
+      </div>
+
+      <div class="w-2/4 mx-auto p-10 mb-20">
+        <h2 class="text-stone-900 text-2xl font-medium mb-5 mt-20 flex">Undefined </h2>
+            <p>
+                You will get undefined value when you call a non-existent property or method of an object</p>
+            <p>Undefined is also a primitive value in JavaScript. A variable or an object has an undefined value when no value is assigned before using it. So you can say that undefined means lack of value or unknown value.</p>
+            <p>An undefined evaluates to false when used in conditional expression.</p>
+            <p>An undefined value means lack of value.</p>
+      </div>
+</body>
+</html>
