@@ -61,10 +61,11 @@ body {
   color: white;
   display: none;
 }
+
 #result {
   position: fixed;
-  top: 10%; 
-  left: 10%;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -181,13 +182,31 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
-  .box-container {
+/* For desktop */
+@media only screen and (min-width: 920px) {
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     padding: 0 20px;
     width: 100%;
+  }
+  .box-container {
+    padding: 0 20px;
+    width: 70%;
   }
   .card {
     flex-direction: column;
   }
 }
 
+/* For mobile */
+@media only screen and (max-width: 700px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .card {
+    flex-direction: row;
+  }
+}

@@ -67,7 +67,7 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTaken = parseInt((finishTime - startTime) / 1000);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -109,11 +109,15 @@ const start = () => {
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
+    
+
     // finished timer
-    if (count == 0) {
+    if (count === 0) {
+      
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
+      countdownOverlay.style.display = 'none';
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
